@@ -1,0 +1,18 @@
+@mixin font-style($font-size, $line-height, $font-weight: false, $color: false) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+
+    @if $font-weight {
+        color: $font-weight;
+    }
+
+    @if $color {
+        color: $color;
+    }
+}
+
+@mixin line-style($width, $botder-top) {
+    width: $width;        
+    border-top: $botder-top;
+}
