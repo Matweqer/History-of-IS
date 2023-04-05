@@ -1,44 +1,21 @@
 import { FC } from 'react';
+import { menuLinks } from '../../models/menu-links';
 import './styles.scss';
 
 const Header: FC = () => {
     return (
         <div className="header">
             <div className="header__menu">
-                <a 
-                    href='#'
-                    className='header__menu-item'
-                >
-                    Главная
-                </a>
-
-                <a 
-                    href='#'
-                    className='header__menu-item'
-                >
-                    Зарождение
-                </a>
-
-                <a 
-                    href='#'
-                    className='header__menu-item'
-                >
-                    Конференции
-                </a>
-
-                <a 
-                    href='#'
-                    className='header__menu-item'
-                >
-                    CTF
-                </a>
-
-                <a 
-                    href='#'
-                    className='header__menu-item'
-                >
-                    Направления
-                </a>
+                { menuLinks.map((menuLink, index) => {
+                        return <a 
+                            href={menuLink.link}
+                            className='header__menu-item'
+                            key={ index }
+                        >
+                            { menuLink.name }
+                        </a>
+                    })
+                }
             </div>
         </div>
     )
