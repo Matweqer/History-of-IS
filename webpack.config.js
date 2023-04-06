@@ -2,6 +2,7 @@ import path from 'path';
 import {fileURLToPath} from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,9 +32,27 @@ const webpackConfig = () => ({
         exclude: /build/,
       },
       {
-        test: /\.s?css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.scss$/,
+        use: [
+          {
+              loader: "style-loader" 
+          }, 
+          {
+              loader: "css-loader" 
+          }, 
+          {
+              loader: "sass-loader"
+          }
+        ]
       },
+      {
+          test: /\.svg$/,
+          loader: 'svg-sprite-loader'
+      },
+      {
+          test: /\.(png|jpg|gif)$/,
+          loader: 'file-loader'
+      }
     ],
   },
   devServer: {
@@ -42,6 +61,10 @@ const webpackConfig = () => ({
     historyApiFallback: true,
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "css/styles.[hash].css",
+      chunkFilename: "[id].css"
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),

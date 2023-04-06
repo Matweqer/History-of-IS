@@ -1,0 +1,60 @@
+@mixin center-position {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin flex($justify-content: false, $align-items: false, $flex-wrap: false, $flex-flow: false) {
+    display: flex;
+
+    @if $justify-content {
+        justify-content: $justify-content;
+    }
+
+    @if $align-items {
+        align-items: $align-items;
+    }
+
+    @if $flex-flow {
+        flex-flow: $flex-flow;
+    }
+
+    @if $flex-wrap {
+        flex-wrap: $flex-wrap;
+    }
+}
+
+@mixin position-absolute($top: false, $left: false, $bottom: false, $right: false, $width: false, $height: false, $padding: false, $margin: false) {
+    position: absolute;
+
+    @if $top {
+        top: $top;
+    }
+
+    @if $left {
+        left: $left;
+    }
+
+    @if $bottom {
+        bottom: $bottom;
+    }
+
+    @if $right {
+        right: $right;
+    }
+
+    @if $width {
+        width: $width;
+    }
+
+    @if $height {
+        height: $height;
+    }
+
+    @if $padding {
+        padding: $padding;
+    }
+
+    @if $margin {
+        margin: $margin;
+    }
+}
