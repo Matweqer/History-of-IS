@@ -14,23 +14,20 @@
         width: 20rem;
         height: 4rem;
 
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        @include font-style(1.6rem, 2.2rem, 500, $white);
     }
 
     @include  max-mobile {
         width: 14rem;
         height: 3rem;
 
-        font-size: 1.4rem;
-        line-height: 1.8rem;
+        @include font-style(1.2rem, 1.8rem, 400, $white);
     }
 
     @include  min-mobile {
         width: 10rem;
         height: 2.6rem;
-
-        font-size: 1rem;
-        line-height: 1.4rem;
+        
+        @include font-style(1rem, 1.4rem, 400, $white);
     }
 }
