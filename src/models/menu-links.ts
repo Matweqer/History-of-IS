@@ -3,22 +3,22 @@ import { MenuLink } from '../abstracts/menu-link';
 export const menuLinks: MenuLink[] = [
     {
         name: 'Главная',
-        link: '#'
+        link: '/'
     },
     {
         name: 'Зарождение',
-        link: '#'
+        link: '/origin'
     },
     {
         name: 'Конференции',
-        link: '#'
+        link: '/perspective-conference'
     },
     {
         name: 'CTF',
-        link: '#'
+        link: '/ctf'
     },
     {
         name: 'Направления',
-        link: '#'
+        link: '/directions'
     }
 ];

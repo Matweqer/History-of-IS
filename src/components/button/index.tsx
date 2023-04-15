@@ -3,28 +3,22 @@ import './styles.scss';
 
 interface ButtonProps {
     text: string,
-    onClick: any,
+    onClick?: () => void,
     disabled?: boolean,
+    className?: string
 }
 
 const Button: FC<ButtonProps> = ({
     text,
     onClick,
     disabled,
+    className
 }) => {
-    const handleClick = (ev: React.MouseEvent):void => {
-        if (ev === null && ev === undefined) {           
-            return;
-        }
-
-        onClick(ev);
-    }
-
     return (
         <button 
-            className="button"
+            className={ 'button ' + className }
             disabled = { disabled }
-            onClick = { handleClick }
+            onClick = { onClick }
         >
             { text }
         </button>

@@ -1,0 +1,88 @@
+@import '../../assets/styles/index.scss';
+
+.overview-block {
+    width: 50%;
+
+    &._swap {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    &__image {
+        width: 100%;
+
+        filter: brightness(50%);
+        
+        @include desktop {
+            height: 40rem;
+        }
+
+        @include tablet {
+            height: 30rem;
+        }
+
+        @include max-mobile {
+            height: 20rem;
+        }
+
+        @include min-mobile {
+            height: 14rem;
+        }
+    }
+
+    &__title {
+        max-width: 40rem;
+        text-align: center;
+        
+        @include font-style(3.2rem, 4.4rem, 600, $dark-grey);
+        @include center-position();
+
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+
+        @include tablet {
+            max-width: 27rem;
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        @include max-mobile {
+            max-width: 17rem;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+
+        @include min-mobile {
+            max-width: 9rem;
+            font-size: 1rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    &__button {
+        margin-top: 2.5rem;
+
+        @include tablet {
+            margin-top: 1rem;
+        }
+
+        @include mobile {
+            margin-top: .8rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7rem 2rem;
+
+        @include tablet {
+            padding: 5rem 2rem;
+        }
+
+        @include mobile {
+            padding: 3rem 2rem;
+        }
+    }
+}
