@@ -45,6 +45,15 @@ const webpackConfig = () => ({
           }
         ]
       },
+      {
+          test: /\.svg$/,
+          loader: 'svg-sprite-loader'
+      },
+      { 
+          test: /\.(jpe?g|gif|jpg|png|svg|woff|ttf|wav|mp3)$/, 
+          loader: "file-loader", 
+          include: '/*/**' 
+      }
     ],
   },
   devServer: {

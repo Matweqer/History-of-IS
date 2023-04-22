@@ -1,0 +1,334 @@
+@import '../assets/styles/index.scss';
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+
+    &__makarevich {
+        max-width: 125rem;
+        width: 100%;
+        margin-bottom: 6rem;
+
+        @include center-position();
+
+        @include tablet {
+            max-width: 70rem;
+        }
+
+        @include max-mobile {
+            max-width: 50rem;
+        }
+
+        @include min-mobile {
+            max-width: 32.5rem;
+        }
+    }
+
+    &__makarevich-title {
+        margin-bottom: 3rem;
+
+        @include font-style(3.2rem, 4.4rem, 700);
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+
+            @include font-style(2.6rem, 3.5rem, 700);
+        }
+
+        @include max-mobile {
+            height: 1rem;
+
+            @include font-style(2.1rem, 2.8rem, 700);
+        }
+
+        @include min-mobile {
+            height: 1rem;
+
+            @include font-style(1.6rem, 2.2rem, 700);
+        }
+    }
+
+    &__makarevich-content {
+        display: flex;
+        gap: 3rem;
+
+        @include tablet {
+            gap: 1.5rem;
+        }
+
+        @include max-mobile {
+            gap: 1.2rem;
+        }
+
+        @include min-mobile {
+            gap: .8rem;
+        }
+    }
+
+    &__makarevich-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include font-style(1.7rem, 2.3rem, 400);
+
+        @include tablet {
+            gap: .3rem;
+        }
+
+        @include max-mobile {
+            gap: 2rem;
+            
+            @include font-style(1.4rem, 2rem, 400);
+        }
+
+        @include min-mobile {
+            gap: .5rem;
+
+            @include font-style(1.1rem, 1.4rem, 400);
+        }
+    }
+
+    &__makarevich-info-2 {
+        @include max-mobile {
+            display: none;
+        }
+
+        @include min-mobile {
+            display: none;
+        }
+    }
+
+    &__makarevich-info-3 {
+        @include tablet {
+            display: none;
+        }
+
+        @include max-mobile {
+            display: none;
+        }
+
+        @include min-mobile {
+            display: none;
+        }
+    }
+
+    &__makarevich-photo {
+        max-width: 27rem;
+        max-height: 31rem;
+        width: 100%;
+
+        @include tablet {
+            width: 20rem;
+            height: 23rem;
+        }
+
+        @include max-mobile {
+            width: 16rem;
+            height: 19rem;
+        }
+
+        @include min-mobile {
+            width: 12rem;
+            height: 14rem;
+        }
+    }
+
+    &__button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    &__title-section {
+        width: 100%;
+        height: 70rem;
+        margin-bottom: 4rem;
+
+        background-image: url(/public/images/home-page-title.jpg);
+        background-size: cover;
+        background-position: 0%;
+        
+        @include tablet {
+            height: 55rem;
+        }
+
+        @include max-mobile {
+            height: 35rem;
+        }
+
+        @include min-mobile {
+            height: 20rem;
+        }
+    }
+
+    &__custom-filter {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 70rem;
+
+        background-color: $dark-grey;
+        opacity: .7;
+
+        @include tablet {
+            height: 55rem;
+        }
+
+        @include max-mobile {
+            height: 35rem;
+        }
+
+        @include min-mobile {
+            height: 20rem;
+        }
+    }
+
+    &__directions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 65rem;
+        margin-bottom: 4rem;
+
+        background-image: url('/public/images/directions2.jpg');
+        background-size: cover;
+
+        @include tablet {
+            height: 42rem;
+        }
+
+        @include max-mobile {
+            height: 30rem;
+        }
+
+        @include min-mobile {
+            height: 20rem;
+        }
+    }
+
+    &__directions-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 95.4rem;
+        width: 100%;
+        height: 35rem;
+        padding: 7.5rem 3rem;
+
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @include tablet {
+            max-width: 53.3rem;
+            height: 20.6rem;
+            padding: 3rem 4rem;
+        }
+
+        @include max-mobile {
+            max-width: 42rem;
+            height: 15rem;
+            padding: 2.1rem 3.2rem;
+        }
+
+        @include min-mobile {
+            max-width: 27.3rem;
+            height: 12.8rem;
+            padding: 1.2rem 2.4rem;
+        }
+    }
+
+    &__directions-description {
+        max-width: 75rem;
+        width: 100%;
+
+        @include font-style(2rem, 3.5rem, 400, $white);
+        text-align: center;
+
+        @include tablet {
+            @include font-style(1.6rem, 2.2rem, 400, $white);
+        }
+
+        @include max-mobile {
+            @include font-style(1.3rem, 1.8rem, 400, $white);
+        }
+
+        @include min-mobile {
+            @include font-style(1rem, 1.4rem, 400, $white);
+        }
+    }
+
+    &__directions-button {
+        margin-top: 2rem;
+        @include tablet {
+            margin-top: 1.5rem;
+        }
+
+        @include max-mobile {
+            margin-top: 1rem;
+        }
+
+        @include min-mobile {
+            margin-top: .5rem;
+        }
+    }
+
+    &__title {
+        width: 100rem;
+        margin-top: 30rem;
+
+        @include center-position();
+        @include font-style(4.6rem, 6.3rem, 600, $white);
+
+        text-align: center;
+        text-shadow: 0px .8rem .8rem rgba(0, 0, 0, 0.5);
+        
+        @include tablet {
+            width: 65.5rem;
+            margin-top: 24rem;
+
+            @include font-style(3.2rem, 4.4rem, 600);
+        }
+
+        @include max-mobile {
+            width: 35.5rem;
+            margin-top: 16rem;
+
+            @include font-style(1.6rem, 2.2rem, 600);
+        }
+
+        @include min-mobile {
+            width: 27.5rem;
+            margin-top: 7rem;
+
+            @include font-style(1.2rem, 1.7rem, 600, $orange);
+        }
+    }
+
+    &__directions-title {
+        margin-bottom: 1rem;
+
+        @include font-style(3.2rem, 4.4rem, 600, $orange);
+
+        @include tablet {
+            @include font-style(2rem, 2.7rem, 600, $orange);
+        }
+
+        @include max-mobile {
+            @include font-style(1.6rem, 2.2rem, 600, $orange);
+        }
+
+        @include min-mobile {
+            @include font-style(1.2rem, 1.7rem, 600, $orange);
+        }
+    }
+
+    &__overview-blocks {
+        display: flex;
+
+        margin-bottom: 4rem;
+    }
+}
