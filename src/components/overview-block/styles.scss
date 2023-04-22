@@ -12,6 +12,11 @@
         width: 100%;
 
         filter: brightness(50%);
+        object-fit: cover;
+
+        @include medium-desktop {
+            height: 50rem;
+        }
         
         @include desktop {
             height: 40rem;
@@ -26,6 +31,7 @@
         }
 
         @include min-mobile {
+
             height: 14rem;
         }
     }
