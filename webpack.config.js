@@ -24,10 +24,21 @@ const webpackConfig = () => ({
   module: {
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react", "@babel/preset-env"],
+          },
+        },
+      },
+      {
         test: /\.tsx?$/,
         loader: "ts-loader",
         options: {
           transpileOnly: true,
+          onlyCompileBundledFiles: true
         },
         exclude: /build/,
       },
@@ -35,11 +46,11 @@ const webpackConfig = () => ({
         test: /\.scss$/,
         use: [
           {
-              loader: "style-loader" 
-          }, 
+              loader: "style-loader"
+          },
           {
-              loader: "css-loader" 
-          }, 
+              loader: "css-loader"
+          },
           {
               loader: "sass-loader"
           }
@@ -49,10 +60,10 @@ const webpackConfig = () => ({
           test: /\.svg$/,
           loader: 'svg-sprite-loader'
       },
-      { 
-          test: /\.(jpe?g|gif|jpg|png|svg|woff|ttf|wav|mp3)$/, 
-          loader: "file-loader", 
-          include: '/*/**' 
+      {
+          test: /\.(jpe?g|gif|jpg|png|svg|woff|ttf|wav|mp3)$/,
+          loader: "file-loader",
+          include: '/*/**'
       }
     ],
   },
