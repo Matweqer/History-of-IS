@@ -1,0 +1,58 @@
+@import '../../assets/styles/index.scss';
+
+.header {
+    position: fixed;
+    z-index: 1;
+    min-width: 100%;
+    padding: 3.5rem 0;
+
+    background-color: $dark-grey;
+
+    @include tablet {
+        padding: 3rem 0;
+    }
+
+    @include max-mobile {
+        padding: 2rem 0;
+    }
+
+    @include min-mobile {
+        padding: 1rem 0;
+    }
+
+    &__menu {
+        max-width: 60rem;
+        width: 100%;
+
+        @include center-position;
+        @include flex();
+        
+        gap: 6.5rem;
+    
+        @include max-mobile {
+            max-width: 44rem;
+
+            gap: 3rem;
+        }
+    
+        @include min-mobile {
+            max-width: 28.5rem;
+
+            gap: 1.6rem;
+        }
+    }
+
+    &__menu-item {
+        @include font-style(1.4rem, 1.7rem, 700, $white);
+
+        text-decoration: none;
+    
+        @include max-mobile {
+            @include font-style(1.2rem, 1.4rem, 600, $white);
+        }
+    
+        @include min-mobile {
+            @include font-style(.8rem, 1rem, 600, $white);
+        }
+    }
+}
