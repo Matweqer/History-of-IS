@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - deploy
+
+main-branch job:
+  stage: build
+  before_script:
+    - npm install
+    - npm run install-node-sass
+    - echo 'Модули загружены успешно!'
+  script:
+    - echo 'Билд успешно пройден'
+  only:
+    - main
+
+dev-test job:
+  stage: test
+  script:
+    - echo 'Тестовый пайплайн на ветке dev пройден'
+  only:
+    - dev
