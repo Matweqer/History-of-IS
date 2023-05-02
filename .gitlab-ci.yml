@@ -1,5 +1,13 @@
-deploy:
+stages:
+  - build
+  - test
+  - deploy
+
+first job:
+  stage: build
   before_script:
     - npm install
     - npm run install-node-sass
     - echo 'Модули загружены успешно!'
+  script:
+    - echo 'Билд успешно пройден'
