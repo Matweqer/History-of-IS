@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development --open --hot",
-    "build": "CI= npm run build",
+    "build": "webpack --mode=production --env production --progress",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
