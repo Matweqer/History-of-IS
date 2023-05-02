@@ -28,7 +28,6 @@ const webpackConfig = () => ({
         loader: "ts-loader",
         options: {
           transpileOnly: true,
-          onlyCompileBundledFiles: true
         },
         exclude: /build/,
       },
