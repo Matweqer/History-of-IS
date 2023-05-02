@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-first job:
+main-branch job:
   stage: build
   before_script:
     - npm install
@@ -13,3 +13,10 @@ first job:
     - echo 'Билд успешно пройден'
   only:
     - main
+
+dev-test job:
+  stage: test
+  script:
+    - echo 'Тестовый пайплайн на ветке dev пройден'
+  only:
+    - dev
