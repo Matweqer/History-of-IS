@@ -2,4 +2,4 @@ deploy:
   before_script:
     - npm install
     - npm run install-node-sass
-    - echo 'Модули загрузились успешно'
+    - echo 'Модули загружены успешно!'
