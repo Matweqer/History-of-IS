@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import {BioPage} from './pages/BioPage/BioPage.tsx';
 
 export const router = createBrowserRouter([
     {
@@ -7,7 +8,8 @@ export const router = createBrowserRouter([
         element: <HomePage />,
     },
     {
-        path:'/origin',
+        path:"/origin",
+        element: <BioPage />,
     },
     {
         path:'/ctf',
