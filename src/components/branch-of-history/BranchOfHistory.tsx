@@ -1,47 +1,8 @@
 import { FC } from 'react';
-import { NodeForBranch } from './node-for-branch/NodeForBranch';
-import { dataForLeftNode, dataForRightNode } from '../../constants/constants';
-import { IDataForNode } from '../../interfaces/interfaces';
 
 import './styles.scss';
-import { LeftNodeForBranch } from './nodeForLeftSideBranch/LeftNodeForBranch';
-import { RightNodeForBranch } from './nodeForRightSideBranch/RightNodeForBranch';
-
 
 export const BranchOfHistory: FC = () => {
-
-  // return(
-  //   <>
-  //     <div className="container-for-header">
-  //       <h1 className="history-of-institute">Краткая история кафедры</h1>
-  //     </div>
-  //     <div className="container">
-  //       <div className="container-for-nodes">
-  //         {dataForNode.map((dataForOneNode: IDataForNode) =>
-  //           <NodeForBranch key={dataForOneNode.year} dataForNode={dataForOneNode}/>)}
-  //       </div>
-  //       <div className="horizontal-line">
-  //       </div>
-  //     </div>
-  //   </>
-  // );
-  // return (
-  //   <div className="container">
-  //     <div className="leftSideContainer">
-  //       {
-  //         dataForLeftNode.map((node) => <LeftNodeForBranch key={node.year} dataForNode={node}/>)
-  //       }
-  //     </div>
-  //     <div className="middleContainer">
-  //       <div className="lineForAllHeight"></div>
-  //     </div>
-  //     <div className="rightSideContainer">
-  //       {
-  //         dataForRightNode.map((node) => <RightNodeForBranch key={node.year} dataForNode={node}/>)
-  //       }
-  //     </div>
-  //   </div>
-  // )
 
   return (
     <div className="timeline">

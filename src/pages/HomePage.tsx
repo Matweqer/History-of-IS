@@ -3,10 +3,10 @@ import Button from '../components/button';
 import Header from '../components/header';
 import OverviewBlock from '../components/overview-block';
 import { overviewBlocks } from '../models/overview-blocks';
-import './styles.scss';
 import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
 import { BranchOfHistory } from '../components/branch-of-history/BranchOfHistory'
+import './styles.scss';
 
 const HomePage: FC = () => {
   return (
