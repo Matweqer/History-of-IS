@@ -26,7 +26,7 @@ export const overviewBlocks = [
         isSwap: false
     },
     {
-        imgPath: 'images/science.jpg',
+        imgPath: 'images/sciencebit.jpg',
         imgAltText: 'Научная деятельность',
         buttonText: 'Подробнее',
         title: 'Научная деятельность', 
