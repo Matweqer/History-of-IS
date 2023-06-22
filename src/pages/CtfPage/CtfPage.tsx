@@ -15,7 +15,7 @@ export const CtfPage: React.FC = () => {
       <Header />
 
       <div className="ctf-page__first-section">
-        <div className="container">
+        <div className="container-ctf">
           <h3 className="header-text" color={'#FFF'}>Зарождение CTF на кафедре БИТ</h3>
           <div className="first-description-block">
             <img src="images/ctfFlag.svg" style={{ width: '147px' }}/>
@@ -54,8 +54,6 @@ export const CtfPage: React.FC = () => {
           </div>
         </div>
       </div>
-
-
 
       <Footer />
     </div>
