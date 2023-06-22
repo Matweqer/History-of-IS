@@ -6,6 +6,7 @@ export const BranchOfHistory: FC = () => {
 
   return (
     <div className="timeline">
+      <h6 style={{ fontSize: '30px', fontFamily: 'Calibri Light', textAlign: 'right' }}>История зарождения кафедры</h6>
       <div className="container left">
         <div className="date">1996</div>
         <img src="images/1996.jpg" className="icon"/>
