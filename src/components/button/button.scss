@@ -1,0 +1,40 @@
+@import '../../assets/styles/index.scss';
+
+.button {
+  width: 280px;
+  height: 60px;
+
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+
+
+  background-color: $orange;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-out 0ms ;
+
+  @include tablet {
+    width: 20rem;
+    height: 4rem;
+
+    @include font-style(1.6rem, 2.2rem, 500, $white);
+  }
+
+  @include max-mobile {
+    width: 14rem;
+    height: 3rem;
+
+    @include font-style(1.2rem, 1.8rem, 400, $white);
+  }
+
+  @include min-mobile {
+    width: 10rem;
+    height: 2.6rem;
+
+    @include font-style(1rem, 1.4rem, 400, $white);
+  }
+}
+
+.button:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.55);
+}

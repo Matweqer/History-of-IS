@@ -1,10 +1,10 @@
-import React from "react";
-import { IAchievement } from "../../types/types";
-import './Achievement.scss';
+import { type FC } from 'react'
 
-export const Achievement: React.FC<IAchievement> = (props) => {
-  const { image, description } = props;
+import { type IAchievement } from 'types'
 
+import './Achievement.scss'
+
+const Achievement: FC<IAchievement> = ({ image, description }) => {
   return (
     <div className="main">
       <img src={image} alt="" className="image-vector"/>
@@ -12,3 +12,5 @@ export const Achievement: React.FC<IAchievement> = (props) => {
     </div>
   )
 }
+
+export { Achievement }

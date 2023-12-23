@@ -1,0 +1,15 @@
+.place-of-work{
+
+  &__block {
+    margin: 0 17px 17px 0;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #FFA740;
+  }
+
+  &__space {
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
+}

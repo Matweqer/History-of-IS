@@ -1,0 +1,63 @@
+@import '../../assets/styles/index.scss';
+
+.header {
+    min-width: 100%;
+    padding: 40px 0;
+    font-size: 20px;
+
+    background-color: $dark-grey;
+
+
+    @include tablet {
+        padding: 30px 0;
+    }
+
+    @include max-mobile {
+        padding: 30px 0;
+    }
+
+    @include min-mobile {
+        padding: 20px 0;
+    }
+
+    &__menu {
+        max-width: 60rem;
+        width: 100%;
+
+        @include center-position;
+        @include flex();
+
+        gap: 6.5rem;
+
+        @include max-mobile {
+            max-width: 44rem;
+
+            gap: 3rem;
+        }
+
+        @include min-mobile {
+            max-width: 28.5rem;
+            gap: 1.6rem;
+        }
+    }
+
+    &__menu-item {
+        font-size: 20px;
+        color: $white;
+        text-decoration: none;
+
+        @include max-mobile {
+            font-size: 16px;
+        }
+
+        @include min-mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__menu-item:hover {
+        text-decoration: underline;
+        text-shadow: $white 0 0 2px;
+
+    }
+}
