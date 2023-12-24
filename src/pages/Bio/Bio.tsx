@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { DepartmentButton } from 'components'
 
+import portret from 'assets/images/portret-photo.svg'
+
 import './bio.scss'
 
 
@@ -23,7 +25,7 @@ const Bio: React.FC = () => {
             <div className='Biography'>
                 <div className='BioFirstBlock'>
                     <div className='PhotoBackground'/>
-                    <img src="images/portret-photo.svg" alt="Олег Борисович Макаревич" className='PortretPhoto'/>
+                    <img src={portret} alt="Олег Борисович Макаревич" className='PortretPhoto'/>
                     <div className='FirstBlockText'>
                         Родился 13 сентября 1934 г., станция Оловянная Читинской области.
                         С 1953 по 1955 г. служил в Советской Армии. В 1956 г. поступил, а в 1961 г.
@@ -76,7 +78,7 @@ const Bio: React.FC = () => {
                     </div>
                 </div>
                 <div className='LowerButton'>
-                    <Link to="/directions">
+                    <Link to="/origin">
                         <DepartmentButton name="Зарождение кафедры"/>
                     </Link>
                 </div>

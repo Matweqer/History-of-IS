@@ -53,7 +53,7 @@ const Home: FC = () => {
                     </p>
 
                     <div className='home-page__button-wrapper'>
-                        <Link to="/origin">
+                        <Link to="/bio">
                             <Button
                                 text='Подробнее'
                                 className="home-page__makarevich-button"

@@ -1,13 +1,15 @@
 import { Timeline } from 'components'
 import { type FC } from 'react'
 
+import './origin.scss'
 
-const GenesisPage: FC = () => {
+
+const Origin: FC = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className='origin'>
       <Timeline />
     </div>
   )
 }
 
-export { GenesisPage }
+export { Origin }
