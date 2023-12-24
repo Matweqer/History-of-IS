@@ -1,0 +1,8 @@
+@import "src/assets/styles/index";
+
+.directions {
+  display: flex;
+  justify-content: space-around;
+  background: radial-gradient(at 100% 50%, $dark-grey, $orange);
+
+}

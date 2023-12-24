@@ -2,7 +2,7 @@ import { type FC } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { DefaultLayout } from 'components'
-import { Bio, Ctf, Origin, Home } from 'pages'
+import { Bio, Ctf, Origin, Home, Directions } from 'pages'
 
 const App: FC = () => {
   return (
@@ -15,6 +15,7 @@ const App: FC = () => {
                     <Route path={'/ctf'} element={<Ctf/>}/>
                     <Route path={'/bio'} element={<Bio/>}/>
 
+                     <Route path={'/directions'} element={<Directions/>}/>
                     {/* <Route path={'/conference'} element={<Bio/>}/> */}
                     {/* <Route path={'/perspective-conference'} element={<Bio/>}/> */}
                     {/* <Route path={'/science'} element={<Bio/>}/> */}

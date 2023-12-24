@@ -1,0 +1,41 @@
+@import "src/assets/styles/index";
+
+.direction {
+  background-color: $white;
+  border: 2px solid $dark-grey;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px 50px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $dark-grey;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid $orange;
+    padding-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    color: $dark-grey;
+
+    strong {
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      list-style-type: circle;
+      margin-bottom: 5px;
+      margin-left: 40px;
+      color: $dark-grey;
+    }
+  }
+}
