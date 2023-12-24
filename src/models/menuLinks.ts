@@ -11,7 +11,7 @@ export const menuLinks: MenuLink[] = [
   },
   {
     name: 'Конференции',
-    link: '/perspective-conference'
+    link: '/conferences'
   },
   {
     name: 'CTF',
