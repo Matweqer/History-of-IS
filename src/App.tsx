@@ -1,8 +1,8 @@
-import { type FC } from 'react'
+import React, { type FC } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { DefaultLayout } from 'components'
-import { Bio, Ctf, Origin, Home, Directions, Conferences, Perspective, InformationSecurity } from 'pages'
+import { Bio, Ctf, Origin, Home, Directions, Conferences, Perspective, InformationSecurity, NotFound } from 'pages'
 
 const App: FC = () => {
   return (
@@ -22,8 +22,9 @@ const App: FC = () => {
 
                 </Route>
 
-                {/* <Route path='*' element={<NotFound/>}/> */}
+                 <Route path='*' element={<NotFound/>}/>
             </Routes>
+
         </BrowserRouter>
 
   )

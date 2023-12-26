@@ -7,3 +7,5 @@ export * from './Directions'
 export * from './Сonferences'
 export * from './Perspective'
 export * from './InformationSecurity'
+
+export * from './NotFound'
