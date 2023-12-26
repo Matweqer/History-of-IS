@@ -1,0 +1,48 @@
+@import "src/assets/styles/index";
+
+.conference__security {
+
+  background-image: radial-gradient(circle, #000000, #462427, #8a453b, #ca7043, #ffa740);
+  &__wrap {
+
+    margin: 0 auto;
+    color: $white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+  }
+
+
+  font-size: 22px;
+
+  &__img-wrap {
+
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $white;
+    padding-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-bottom: 5px;
+  }
+}

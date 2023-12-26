@@ -50,16 +50,6 @@ const Ctf: FC = () => {
         </div>
       </div>
 
-      <div className="ctf-page__third-section">
-        <div className="container-black">
-          <h3 className="header-text" color={'#000'}>В числе достижений</h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-            {
-              placesOfWork.map((placeOfWork) => <PlaceOfWork key={placeOfWork} description={placeOfWork}/>)
-            }
-          </div>
-        </div>
-      </div>
 
     </div>
   )

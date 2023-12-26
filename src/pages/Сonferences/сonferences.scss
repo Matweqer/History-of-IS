@@ -7,8 +7,11 @@
   flex-wrap: wrap;
 
   min-height: 600px;
-  background: radial-gradient(circle, rgba(255,164,57,1) 0%, rgba(0,0,0,1) 97%);
+  //background: radial-gradient(circle, rgba(255,164,57,1) 0%, rgba(0,0,0,1) 97%);
 
+  //background-image: radial-gradient(circle, #000000, #462427, #8a453b, #ca7043, #ffa740);
+
+  background-image: linear-gradient(to right bottom, #000000, #462427, #8a453b, #ca7043, #ffa740);
   a {
     color: black;
   }

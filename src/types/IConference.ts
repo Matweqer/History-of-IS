@@ -1,6 +1,6 @@
 export interface IConference {
   title: string
-  year: number
+  year: string
   description: string
   link: string
 }

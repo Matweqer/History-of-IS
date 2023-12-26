@@ -3,7 +3,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-
+  //background-image: linear-gradient(to top, #000000, #25151b, #422134, #5f2f52, #7a3f75, #964884, #b35090, #d1589b, #ef5f86, #ff706d, #ff8a55, #ffa740);
+  background-image: linear-gradient(to left top, #000000, #25151b, #422134, #5f2f52, #7a3f75, #964884, #b35090, #d1589b, #ef5f86, #ff706d, #ff8a55, #ffa740);
   &__first-section {
     width: 100%;
     margin-top: 87px;
@@ -30,7 +31,7 @@
 .container-black {
   padding-left: 101px;
   padding-right: 128px;
-  color: #000;
+  color: #FFF;
 }
 
 .header-text {
@@ -41,7 +42,6 @@
 
 .description {
   font-size: 22px;
-  font-family: "Calibri Light";
 }
 
 .first-description-block {
