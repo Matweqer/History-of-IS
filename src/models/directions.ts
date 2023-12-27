@@ -1,4 +1,3 @@
-// directions.ts
 import { type IDirection } from 'types'
 
 const directions: IDirection[] = [
