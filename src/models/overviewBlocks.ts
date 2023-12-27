@@ -11,7 +11,7 @@ export const overviewBlocks: IOverviewBlock[] = [
     imgAltText: 'Конференция “Информационная безопасность”',
     buttonText: 'Подробнее',
     title: 'Конференция “Информационная безопасность”',
-    link: '/is-conference',
+    link: '/conferences/information-security',
     isSwap: true
   },
   {
@@ -19,7 +19,7 @@ export const overviewBlocks: IOverviewBlock[] = [
     imgAltText: 'Конференция “Перспектива”',
     buttonText: 'Подробнее',
     title: 'Конференция “Перспектива”',
-    link: '/perspective-conference',
+    link: '/conferences/perspective',
     isSwap: false
   },
   {

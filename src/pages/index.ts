@@ -3,6 +3,7 @@ export * from './Bio'
 export * from './Home'
 export * from './Origin'
 export * from './Directions'
+export * from './Science'
 
 export * from './Сonferences'
 export * from './Perspective'
